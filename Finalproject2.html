@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethiopian Coffee</title>
+    <style>
+    </style>
+</head>
+<style>
+   
+
+.button-container {
+        display: block;
+        margin: 100px auto;
+        padding: 15px 15px;
+        color: #fff;
+        
+        line-height: 22px; 
+        cursor: pointer;
+        text-align: center;
+      }
+      button:hover{
+        background:rgb(211, 248, 0);
+      }
+      button{
+        font-size: 16px;
+      }
+h1{
+    color: rgb(211, 248, 0);
+    text-align: center;
+    font-size: 65px;
+}
+h2{
+    color: rgb(211, 248, 0);
+    text-align: center;
+    font-size: 65px;
+}
+.btn1{
+    background: brown;
+    border-radius: 800px ;
+    box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+    transition: all 200ms ease;
+    padding: 15px 15px;
+    margin: 150px auto;
+    width: 150px;
+    height: 110;
+
+        
+}
+.btn2{
+    background: brown;
+    border-radius: 800px;
+    box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+    transition: all 200ms ease;
+    padding: 15px 15px;
+    margin: 150px auto;
+    width: 150px;
+    height: 110;
+   
+}
+body{
+    background-image: url(coffee1.jpg);
+}
+</style>
+<body>
+    <h1>Ethiopian Coffee</h1>
+    <h2>Test our Coffee</h2>
+
+
+<div class="button-container">
+  <a href="https://www.peachcoffeeroasters.com/blogs/our-community/guide-to-ethiopian-coffee" target= "_blank">
+    <button class="btn1"  >
+        See Ethiopian Coffee
+      </button>
+      </a>
+<button class="btn2" onclick="orderCoffee()">
+    Order your coffee
+</button>
+</div>  
+    <script>
+        function orderCoffee(){
+
+let name = prompt("What is your name?");
+let drink = prompt("How many coffee did you want?");
+let heading =document.querySelector("h2");
+if(drink>0){
+  heading.innerHTML =name+"! We will bring your " +drink+ " coffee soon" ;
+}
+}
+
+let changeButton = document.querySelector("btn2");
+changeButton.addEventListener("click", orderCoffee);
+      
+    </script>   
+</body>
+</html>
